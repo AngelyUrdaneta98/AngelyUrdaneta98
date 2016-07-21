@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Functions</title>
+	</head>
+	<body>
+	</pre>
+		from turtle import *
+import turtle
+turtle.bgcolor("skyblue")
+def draw_building(x,y, color):
+    penup()
+    pencolor("darkblue")
+    goto(x,y)
+    begin_fill()
+    fillcolor(color)
+    pendown()
+    forward(100)
+    right(90)
+    forward(300)
+    right(90)
+    forward(100)
+    right(90)
+    forward(300)
+    penup()
+    end_fill()
+draw_building(-300,0,"darkblue")
+    
+def balloon(x,y, color):
+    penup()
+    pencolor(color)
+    goto(x,y)
+    begin_fill()
+    fillcolor(color)
+    pendown()
+    circle(50,630)
+    right(-60)
+    for i in range(3):
+        right(120)
+        forward(20)
+    end_fill()
+    penup()
+    pencolor(color)
+    left(25)
+    pendown()
+    back(200)
+    
+balloon(0,200,"pink")
+penup()
+balloon(40,210,"purple")
+balloon(80,200,"yellow")
+balloon(120,210,"green")
+balloon(160,200,"blue")
+balloon(80,50,"purple")
+balloon(120,50,"yellow")
+balloon(140,55,"green")
+</pre>
+</body>
+<img src="functions.jpg">
+
+	
